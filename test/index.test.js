@@ -10,7 +10,7 @@
 const calculateBill = require('../index');
 test("calculateBill is a function", () => {
 
-  expect(calculateBill).toBeInstanceOf(Function);
+    expect(calculateBill).toBeInstanceOf(Function);
 });
 
 test('it returns a string ', () => {
@@ -51,3 +51,7 @@ test('if tip is not a number returns an error string', () => {
 
     expect(calculateBill(price, vat, null)).toBe(errorMessage);
 })
+
+// create a function
+    // this function will have to have 3 arguments - amount, vat and tip?
+    // this function will have to return a string with a currency sign
